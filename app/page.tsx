@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
@@ -6,6 +8,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#work">작업물</a>
           <a href="#about">소개</a>
+          <Link href="/archive">Archive</Link>
           <a href="#contact">연락하기</a>
         </div>
         <a className="availability" href="#contact"><i /> Available for a new build</a>
