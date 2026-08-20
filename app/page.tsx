@@ -1,69 +1,53 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main>
+      <nav className="site-nav" aria-label="주요 메뉴">
+        <a className="brand" href="#top">JM<span>.</span></a>
+        <div className="nav-links">
+          <a href="#work">작업물</a>
+          <a href="#about">소개</a>
+          <a href="#contact">연락하기</a>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <a className="availability" href="#contact"><i /> Available for a new build</a>
+      </nav>
+
+      <section className="hero section-wrap" id="top">
+        <div className="hero-copy">
+          <p className="eyebrow">Software student · Ajou University · 2026</p>
+          <h1>사람의 흐름을<br /><em>코드로</em> 설계합니다.</h1>
+          <p className="hero-intro">안녕하세요, 이정명입니다. 복잡한 문제를 또렷한 경험으로 바꾸는 소프트웨어를 만들고 있습니다.</p>
+          <div className="hero-actions">
+            <a className="button button-dark" href="#work">작업물 보기 <span>↗</span></a>
+            <a className="text-link" href="#contact">함께 이야기하기 <span>↗</span></a>
+          </div>
         </div>
-      </main>
-    </div>
+        <div className="hero-art" aria-label="이정명의 관심사를 나타내는 그래픽">
+          <div className="art-orbit orbit-one" />
+          <div className="art-orbit orbit-two" />
+          <div className="art-core">JM</div>
+          <span className="art-tag tag-top">BUILD WITH CARE</span>
+          <span className="art-tag tag-bottom">SEOUL / KOREA</span>
+          <span className="art-plus plus-one">+</span>
+          <span className="art-plus plus-two">+</span>
+        </div>
+      </section>
+
+      <div className="ticker" aria-hidden="true"><span>DESIGNING USEFUL THINGS</span><b>✳</b><span>LEARNING IN PUBLIC</span><b>✳</b><span>BUILDING FOR HUMANS</span><b>✳</b></div>
+
+      <section className="work section-wrap" id="work">
+        <div className="section-heading"><p className="eyebrow">01 / Selected work</p><h2>작은 디테일이<br /><em>큰 차이</em>를 만듭니다.</h2></div>
+        <div className="project-grid">
+          <article className="project project-lime"><div className="project-visual visual-dashboard"><div className="mini-top"><span /> <span /> <span /></div><div className="mini-bars"><i /><i /><i /><i /></div><div className="mini-line" /></div><div className="project-meta"><span>01 — 2025</span><h3>Flowstate</h3><p>집중을 위한 작업 관리 도구</p></div></article>
+          <article className="project project-orange"><div className="project-visual visual-type"><span>오늘의<br /><em>기록</em></span><small>WRITE IT DOWN</small></div><div className="project-meta"><span>02 — 2024</span><h3>On the record</h3><p>생각을 수집하고 연결하는 인터페이스</p></div></article>
+          <article className="project project-ink"><div className="project-visual visual-orbit"><div /><span>∞</span></div><div className="project-meta"><span>03 — 2024</span><h3>Open source</h3><p>함께 배우는 작은 실험들</p></div></article>
+        </div>
+      </section>
+
+      <section className="about section-wrap" id="about"><p className="eyebrow">02 / A little about me</p><div className="about-content"><h2>배우고, 만들고,<br /><em>나누는</em> 개발자.</h2><div><p>아주대학교 소프트웨어학과에서 공부하며 웹 기술과 제품의 접점을 탐구합니다. 좋은 코드는 기능을 넘어 사람의 시간을 존중해야 한다고 믿습니다.</p><div className="skill-list"><span>FRONTEND</span><span>PRODUCT THINKING</span><span>INTERACTION</span></div></div></div></section>
+
+      <section className="contact section-wrap" id="contact"><p className="eyebrow">03 / Start a conversation</p><h2>좋은 것을 함께<br /><em>만들어볼까요?</em></h2><a className="contact-mail" href="mailto:hello@jungmyung.dev">hello@jungmyung.dev <span>↗</span></a></section>
+
+      <footer className="site-footer"><span>© 2026 LEE JUNG-MYUNG</span><span>MADE WITH CURIOSITY</span><a href="#top">BACK TO TOP ↑</a></footer>
+    </main>
   );
 }
