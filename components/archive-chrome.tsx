@@ -9,8 +9,8 @@ export function ArchiveChrome({ children }: { children: ReactNode }) {
         <div className="nav-links">
           <Link href="/#work">작업물</Link>
           <Link href="/#about">소개</Link>
-          <Link href="/archive">Archive</Link>
           <Link href="/#contact">연락하기</Link>
+          <Link href="/archive">Archive</Link>
         </div>
         <Link className="availability" href="/#contact"><i /> Available for a new build</Link>
       </nav>

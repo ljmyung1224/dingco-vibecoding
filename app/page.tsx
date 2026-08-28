@@ -8,8 +8,8 @@ export default function Home() {
         <div className="nav-links">
           <a href="#work">작업물</a>
           <a href="#about">소개</a>
-          <Link href="/archive">Archive</Link>
           <a href="#contact">연락하기</a>
+          <Link href="/archive">Archive</Link>
         </div>
         <a className="availability" href="#contact"><i /> Available for a new build</a>
       </nav>
@@ -48,7 +48,7 @@ export default function Home() {
 
       <section className="about section-wrap" id="about"><p className="eyebrow">02 / A little about me</p><div className="about-content"><h2>배우고, 만들고,<br /><em>나누는</em> 개발자.</h2><div><p>아주대학교 소프트웨어학과에서 공부하며 웹 기술과 제품의 접점을 탐구합니다. 좋은 코드는 기능을 넘어 사람의 시간을 존중해야 한다고 믿습니다.</p><div className="skill-list"><span>FRONTEND</span><span>PRODUCT THINKING</span><span>INTERACTION</span></div></div></div></section>
 
-      <section className="contact section-wrap" id="contact"><p className="eyebrow">03 / Start a conversation</p><h2>좋은 것을 함께<br /><em>만들어볼까요?</em></h2><a className="contact-mail" href="mailto:hello@jungmyung.dev">hello@jungmyung.dev <span>↗</span></a></section>
+      <section className="contact section-wrap" id="contact"><p className="eyebrow">03 / Start a conversation</p><h2>좋은 것을 함께<br /><em>만들어볼까요?</em></h2><a className="contact-mail" href="mailto:ljmyung1224@ajou.ac.kr">ljmyung1224@ajou.ac.kr <span>↗</span></a></section>
 
       <footer className="site-footer"><span>© 2026 LEE JUNG-MYUNG</span><span>MADE WITH CURIOSITY</span><a href="#top">BACK TO TOP ↑</a></footer>
     </main>
