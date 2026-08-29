@@ -23,8 +23,10 @@ export default async function ArchivePostPage({ params }: ArchivePostPageProps) 
   const postIndex = posts.findIndex((item) => item.slug === slug);
   const post = posts[postIndex];
   if (!post) notFound();
-  const previousPost = posts[postIndex + 1];
-  const nextPost = posts[postIndex - 1];
+  const categoryPosts = posts.filter((item) => item.category === post.category);
+  const categoryPostIndex = categoryPosts.findIndex((item) => item.slug === slug);
+  const previousPost = categoryPosts[categoryPostIndex + 1];
+  const nextPost = categoryPosts[categoryPostIndex - 1];
 
   return (
     <ArchiveChrome>

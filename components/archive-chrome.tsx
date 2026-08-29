@@ -9,7 +9,7 @@ export function ArchiveChrome({ children }: { children: ReactNode }) {
       <SiteNav archive />
       {children}
       <footer className="site-footer">
-        <span>© 2026 LEE JUNG-MYUNG</span>
+        <span>© 2026 LEE JEONGMYEONG</span>
         <span>NOTES ON BUILDING &amp; LIVING</span>
         <Link href="/archive">BACK TO ARCHIVE ↑</Link>
       </footer>

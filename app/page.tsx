@@ -41,7 +41,7 @@ export default function Home() {
             <div className="project-meta"><div><span>01 · 2025</span><h3>Flowstate</h3><p>집중을 위한 작업 관리 도구</p></div><Arrow /></div>
           </article>
           <article className="project project-note" data-reveal data-delay="140">
-            <div className="project-visual visual-type"><small>WRITE IT DOWN</small><span>오늘의<br /><em>기록</em></span><i>✦</i></div>
+            <div className="project-visual visual-type"><small>WRITE IT DOWN</small><span><span>오늘의</span><em>기록</em></span><i>✦</i></div>
             <div className="project-meta"><div><span>02 · 2024</span><h3>On the record</h3><p>생각을 수집하고 연결하는 인터페이스</p></div><Arrow /></div>
           </article>
           <article className="project project-orbit" data-reveal data-delay="220">
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="site-footer"><span>© 2026 LEE JUNG-MYUNG</span><span>MADE WITH CURIOSITY</span><a href="#top">BACK TO TOP ↑</a></footer>
+      <footer className="site-footer"><span>© 2026 LEE JEONGMYEONG</span><a href="#top">BACK TO TOP ↑</a></footer>
     </main>
   );
 }

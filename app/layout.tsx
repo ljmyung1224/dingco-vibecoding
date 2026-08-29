@@ -3,7 +3,7 @@ import { MotionController } from "@/components/motion-controller";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "이정명 | Software Portfolio",
+  title: "Portfolio - LEE JEONGMYEONG",
   description: "아주대학교 소프트웨어학과 이정명의 포트폴리오",
 };
 
