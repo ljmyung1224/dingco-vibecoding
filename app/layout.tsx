@@ -5,6 +5,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Portfolio - LEE JEONGMYEONG",
   description: "아주대학교 소프트웨어학과 이정명의 포트폴리오",
+  verification: {
+    google: "gAa-aT7kkEA8CD9-DuRnhlcZCuOhtEBXtu1Z3FgjMV0",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
