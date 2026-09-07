@@ -57,7 +57,7 @@ export default function Home() {
           <h2><span className="title-line" data-reveal data-delay="60">배우고, 만들고,</span><br /><span className="title-line" data-reveal data-delay="140"><em>나누는</em> 개발자.</span></h2>
           <div className="about-copy" data-reveal data-delay="190">
             <p>아주대학교 소프트웨어학과에서 공부하며 기술과 제품의 접점을 탐구합니다. 좋은 코드는 기능을 넘어 사람의 시간과 맥락을 존중해야 한다고 믿습니다.</p>
-            <div className="skill-list"><span>Frontend</span><span>Product thinking</span><span>Interaction</span></div>
+            <div className="skill-list"><span>Next.js</span><span>Supabase</span><span>Git</span><span>Figma MCP</span><span>Flutter</span></div>
           </div>
         </div>
         <div className="principles">
